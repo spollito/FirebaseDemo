@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml" fx:controller="aydin.firebasedemo.DataAccessController">
+    <children>
+        <Label text="Name:" />
+        <TextField fx:id="nameField" />
+        <Label text="Age:" />
+        <TextField fx:id="ageField" />
+        <Label text="Phone Number:" />
+        <TextField fx:id="phoneField" />
+        <HBox spacing="10.0">
+            <Button text="Add Person" onAction="#handleWrite" />
+            <Button text="Read Persons" onAction="#handleRead" />
+        </HBox>
+    </children>
+</VBox>

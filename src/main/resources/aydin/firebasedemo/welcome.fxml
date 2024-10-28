@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml" fx:controller="aydin.firebasedemo.WelcomeController">
+    <children>
+        <Label text="Email:" />
+        <TextField fx:id="emailField" />
+        <Label text="Password:" />
+        <PasswordField fx:id="passwordField" />
+        <HBox spacing="10.0">
+            <Button text="Register" onAction="#handleRegister"/>
+            <Button text="Sign In" onAction="#handleSignIn"/>
+        </HBox>
+    </children>
+</VBox>

@@ -100,8 +100,7 @@ public class PrimaryController {
                     outputTextArea.setText(outputTextArea.getText()+ document.getData().get("Name")+ " , Age: "+
                             document.getData().get("Age")+ " \n ");
                     System.out.println(document.getId() + " => " + document.getData().get("Name"));
-                    person  = new Person(String.valueOf(document.getData().get("Name")),
-                            Integer.parseInt(document.getData().get("Age").toString()));
+
                     listOfUsers.add(person);
                 }
             }
